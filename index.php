@@ -58,15 +58,6 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							 <a href="register.php">Create account!</a>
-							 
-						</div>
-
-						 
-					</div>
-
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" id="login" name="login"> 	Login 	</button>
 					</div>
