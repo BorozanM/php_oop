@@ -21,7 +21,7 @@ class Laptop{
 
     public static function getAllLaptops($conn){
 
-        $query= "select * from laptop p inner join user u on u.userId=p.user";
+        $query= "select * from laptop p inner join user u on u.id=p.user";
         return $conn->query($query);
     }
 
