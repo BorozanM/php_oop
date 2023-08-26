@@ -25,6 +25,8 @@ class User{
         return $conn->query($query);
 
     }
+
+    
     public static function getIdByEmail($user,$conn){
         $query = "  select * from user where email='$user->email' ";
         $myArray = array();
@@ -34,9 +36,9 @@ class User{
 
                 $myArray[] = $row;
             }
-        }
+        } 
 
-        return $myArray[0]["userId"];
+        return $myArray[0]["id"];
 
     }
 
