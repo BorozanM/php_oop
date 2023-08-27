@@ -17,7 +17,7 @@ class User{
         $this->password=$password;
 
     }
-
+   
 
     public static function login($user,$conn){
         $query = "select * from user where email='$user->email' and password='$user->password'";
@@ -25,8 +25,6 @@ class User{
         return $conn->query($query);
 
     }
-
-    
     public static function getIdByEmail($user,$conn){
         $query = "  select * from user where email='$user->email' ";
         $myArray = array();
@@ -36,12 +34,12 @@ class User{
 
                 $myArray[] = $row;
             }
-        } 
-
-        return $myArray[0]["id"];
+        }
+ 
+        return $myArray[0]["userId"];
 
     }
-
+ 
 
 
 }

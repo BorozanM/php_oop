@@ -29,17 +29,17 @@ class Laptop{
     public static function addLaptop($laptop, $conn){
 
         $query= "insert into laptop(model,description,price,user ) values('$laptop->model','$laptop->description',$laptop->price,$laptop->user )";
-
+        
         return $conn->query($query);
-
+        
 
     }
 
 
     public static function getLaptopById($id, $conn){
 
-        $query= "select * from laptop p inner join user u on u.userId=p.user where p.id=$id";
-
+        $query= "select * from laptop p inner join user u on u.id=p.user where p.id=$id";
+        
         return $conn->query($query);
 
 
